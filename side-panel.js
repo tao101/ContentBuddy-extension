@@ -16,7 +16,7 @@ iframe.style.top = '0px';
 iframe.style.right = '0px';
 iframe.style.zIndex = '9000000000000000000';
 iframe.style.border = '0px';
-iframe.src = 'https://taoufiqlotfi.tech/'; //chrome.runtime.getURL('popup.html');
+iframe.src = 'https://contentbuddy.online'; //chrome.runtime.getURL('popup.html');
 
 document.body.appendChild(iframe);
 
