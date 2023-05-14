@@ -1,0 +1,22 @@
+{
+  "version": "1.0",
+  "name": "ContentBuddy",
+  "description": "ContentBuddy lets you chat with GPT in your browser. it simply Injects an iframe into your current tab and easily copy content from GPT without switching tabs. Seamless content creation made easy!",
+  "manifest_version": 3,
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {},
+  "content_scripts": [
+    {
+      "matches": ["https://*/*", "http://*/*"],
+      "js": ["side-panel.js"]
+    }
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": ["popup.html"],
+      "matches": ["https://*/*", "http://*/*"]
+    }
+  ]
+}
